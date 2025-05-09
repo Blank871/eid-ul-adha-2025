@@ -5,40 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eid Ul Adha Prayer 2025</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            padding: 20px;
-            border: 2px solid #ddd;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
         }
-        h1 {
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1, h2 {
             text-align: center;
             color: #005a9c;
+            animation: popUp 1s ease-in-out;
         }
-        h2 {
-            color: #008000;
+        @keyframes popUp {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .section {
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
         }
         .important {
-            color: red;
+            background: #ffebee;
+            border-radius: 8px;
+            padding: 15px;
+            color: #d32f2f;
             font-weight: bold;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0px 0px 10px rgba(211, 47, 47, 0.3); }
+            to { box-shadow: 0px 0px 20px rgba(211, 47, 47, 0.6); }
         }
         .rain-info {
-            color: #555;
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
             font-style: italic;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
         }
         .map-container, .qrcode-container {
             text-align: center;
             margin-top: 20px;
+        }
+        .map-container iframe, .qrcode-container img {
+            transition: transform 0.3s;
+        }
+        .map-container iframe:hover, .qrcode-container img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
         }
     </style>
 </head>
@@ -48,8 +99,10 @@
     <h1>🌙 Eid Ul Adha Prayer 2025 🌙</h1>
     <h2>Jointly Hosted by Nagoya Mosque & AICA</h2>
 
-    <p><strong>Date:</strong> Friday, June 6th or Saturday, June 7th, 2025</p>
-    <p><strong>Arrival:</strong> 9:00 AM | <strong>Salat (Prayer):</strong> 10:00 AM</p>
+    <div class="section">
+        <p><strong>Date:</strong> Friday, June 6th or Saturday, June 7th, 2025</p>
+        <p><strong>Arrival:</strong> 9:00 AM | <strong>Salat (Prayer):</strong> 10:00 AM</p>
+    </div>
 
     <h2>📍 Location:</h2>
     <p>Kohoku Koen (Kohoku Park) – West Side of the Station</p>
@@ -61,10 +114,10 @@
     <div class="map-container">
         <h2>🗺 Google Map:</h2>
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26145.836181043203!2d136.88119871575225!3d35.07362215254517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370e53a9b82e3%3A0xd082bda3fa88a16b!2sKohoku%20Park!5e0!3m2!1sen!2sjp!4v1715223000000" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.0!2d136.8851087!3d35.1061265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.5!3m3!1m2!1s0x60037995c58b74bb%3A0xf2bcefe56c4e26ef!2sKohoku%20Park!5e0!3m2!1sen!2sjp!4v1715223000000" 
             width="100%" 
             height="400" 
-            style="border:0;" 
+            style="border-radius: 12px; border:0;" 
             allowfullscreen="" 
             loading="lazy">
         </iframe>
@@ -72,34 +125,52 @@
 
     <div class="qrcode-container">
         <h2>📱 Scan for Google Maps Location:</h2>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://goo.gl/maps/6Ld8TXz3PQG2" 
-             alt="QR Code for Google Maps Location">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/place/Kohoku+Park/@35.1061265,136.8851087,16.5z/data=!4m6!3m5!1s0x60037995c58b74bb:0xf2bcefe56c4e26ef!8m2!3d35.1070274!4d136.885921!16s%2Fg%2F11c0r5g0mh?hl=en&entry=ttu" 
+             alt="QR Code for Kohoku Park">
     </div>
 
-    <h2 class="important">⚠️ IMPORTANT REMINDERS ⚠️</h2>
-    <p>🚫 <strong>Use public transportation only</strong> – No parking is available.</p>
-    <p>🚫 <strong>Do not park on public roads</strong> – It's illegal.</p>
+    <div class="important">
+        <h2>⚠️ IMPORTANT REMINDERS ⚠️</h2>
+        <p>🚫 <strong>Use public transportation only</strong> – No parking is available.</p>
+        <p>🚫 <strong>Do not park on public roads</strong> – It's illegal.</p>
+    </div>
 
-    <h2 class="rain-info">🌧 IN CASE OF RAIN 🌧</h2>
-    <p>Prayer will be held at Nagoya Mosque in 4 sessions:</p>
-    <ul>
-        <li>7:00 AM</li>
-        <li>8:00 AM</li>
-        <li>9:00 AM</li>
-        <li>10:00 AM</li>
-    </ul>
+    <div class="rain-info">
+        <h2>🌧 IN CASE OF RAIN 🌧</h2>
+        <p>Prayer will be held at Nagoya Mosque in 4 sessions:</p>
+        <ul>
+            <li>7:00 AM</li>
+            <li>8:00 AM</li>
+            <li>9:00 AM</li>
+            <li>10:00 AM</li>
+        </ul>
+    </div>
 
     <h2>🤝 Organized In Collaboration With:</h2>
     <p>Nagoya Mosque & AICA (Association for International Cultural Advancement)</p>
 
     <h2>📢 Stay Updated:</h2>
-    <p>🌐 Nagoya Mosque Website</p>
-    <p>📘 Facebook: @nagoyamosque</p>
+    <p><a href="#" class="button">🌐 Nagoya Mosque Website</a></p>
+    <p><a href="#" class="button">📘 Facebook: @nagoyamosque</a></p>
 
     <div class="footer">
         <p>🕌✨ We look forward to seeing you there! ✨🕌</p>
     </div>
 </div>
+
+<script>
+    // Animation for sections when scrolling
+    const sections = document.querySelectorAll('.section');
+    window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.8) {
+                section.style.opacity = '1';
+                section.style.transform = 'translateX(0)';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
