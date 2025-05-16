@@ -45,21 +45,20 @@
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
         }
         .important {
-margin-top: 20px; /* Creates space above */
+            margin-top: 20px;
             background: #ffebee;
             border-radius: 8px;
             padding: 15px;
             color: #d32f2f;
             font-weight: bold;
             animation: glow 2s infinite alternate;
-
         }
         @keyframes glow {
             from { box-shadow: 0px 0px 10px rgba(211, 47, 47, 0.3); }
             to { box-shadow: 0px 0px 20px rgba(211, 47, 47, 0.6); }
         }
         .rain-info {
-margin-top: 20px; /* Creates space above */
+            margin-top: 20px;
             background: #e8f5e9;
             padding: 15px;
             border-radius: 8px;
@@ -117,7 +116,7 @@ margin-top: 20px; /* Creates space above */
     <div class="map-container">
         <h2>🗺 Google Map:</h2>
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.0!2d136.8851087!3d35.1061265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.5!3m3!1m2!1s0x60037995c58b74bb%3A0xf2bcefe56c4e26ef!2sKohoku%20Park!5e0!3m2!1sen!2sjp!4v1715223000000" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.625167189911!2d136.8803530757117!3d35.10738717276988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003798f9e5262cd%3A0x8b776d5d265e6d19!2s35%C2%B006'26.6%22N%20136%C2%B052'58.6%22E!5e0!3m2!1sen!2sjp!4v1715869025029!5m2!1sen!2sjp" 
             width="100%" 
             height="400" 
             style="border-radius: 12px; border:0;" 
@@ -128,8 +127,8 @@ margin-top: 20px; /* Creates space above */
 
     <div class="qrcode-container">
         <h2>📱 Scan for Google Maps Location:</h2>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/place/Kohoku+Park/@35.1061265,136.8851087,16.5z/data=!4m6!3m5!1s0x60037995c58b74bb:0xf2bcefe56c4e26ef!8m2!3d35.1070274!4d136.885921!16s%2Fg%2F11c0r5g0mh?hl=en&entry=ttu" 
-             alt="QR Code for Kohoku Park">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/place/35%C2%B006'26.6%22N+136%C2%B052'58.6%22E" 
+             alt="QR Code for Kohoku Park New Location">
     </div>
 
     <div class="important">
@@ -153,9 +152,8 @@ margin-top: 20px; /* Creates space above */
     <p>Nagoya Mosque & AICA (Association for International Cultural Advancement)</p>
 
     <h2>📢 Stay Updated:</h2>
- <p><a href="https://en.nagoyamosque.com/" class="button" target="_blank">🌐 Nagoya Mosque Website</a></p>
-<p><a href="https://www.facebook.com/nagoyamosque/" class="button" target="_blank">📘 Facebook: @nagoyamosque</a></p>
-
+    <p><a href="https://en.nagoyamosque.com/" class="button" target="_blank">🌐 Nagoya Mosque Website</a></p>
+    <p><a href="https://www.facebook.com/nagoyamosque/" class="button" target="_blank">📘 Facebook: @nagoyamosque</a></p>
 
     <div class="footer">
         <p>🕌✨ We look forward to seeing you there! ✨🕌</p>
@@ -163,7 +161,6 @@ margin-top: 20px; /* Creates space above */
 </div>
 
 <script>
-    // Animation for sections when scrolling
     const sections = document.querySelectorAll('.section');
     window.addEventListener('scroll', () => {
         sections.forEach(section => {
